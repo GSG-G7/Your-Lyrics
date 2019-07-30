@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./test/logic.test.js | tap-spec && node ./test/controllers/error.test.js | tap-spec && node ./test/controllers/home.test.js | tap-spec"
+    "start": "node src/index.js",
+    "test": "node ./test/logic.test.js | tap-spec  && node ./test/controllers/error.test.js | tap-spec && node ./test/controllers/home.test.js | tap-spec",
+    "watch": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
