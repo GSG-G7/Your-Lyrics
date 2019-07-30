@@ -5,6 +5,5 @@ exports.get = (req, res) => {
 };
 
 exports.post = (req, res) => {
-  //   res.sendFile(path.join(__dirname, '..', '..', 'public', 'index.html'));
   res.redirect('/index.html');
 };
