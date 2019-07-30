@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "node ./test/logic.test.js | tap-spec  && node ./test/controllers/*test.js | tap-spec"
+        "test": "node ./test/logic.test.js | tap-spec && node ./test/controllers/error.test.js | tap-spec && node ./test/controllers/home.test.js | tap-spec"
     },
     "keywords": [],
     "author": "",
