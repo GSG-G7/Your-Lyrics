@@ -1,41 +1,41 @@
 {
-  "name": "your_lyrics",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "codecov": "^3.5.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "nock": "^10.0.6",
-    "nodemon": "^1.19.1",
-    "supertest": "^4.0.2",
-    "tap-spec": "^5.0.0",
-    "tape": "^4.11.0"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "compression": "^1.7.4",
-    "express": "^4.17.1",
-    "morgan": "^1.9.1",
-    "serve-favicon": "^2.5.0"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GSG-G7/Your-Lyrics.git"
-  },
-  "bugs": {
-    "url": "https://github.com/GSG-G7/Your-Lyrics/issues"
-  },
-  "homepage": "https://github.com/GSG-G7/Your-Lyrics#readme"
+    "name": "your_lyrics",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "node ./test/logic.test.js | tap-spec  && node ./test/controllers/*test.js | tap-spec"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "codecov": "^3.5.0",
+        "eslint": "^5.16.0",
+        "eslint-config-airbnb-base": "^13.2.0",
+        "eslint-plugin-import": "^2.18.2",
+        "nock": "^10.0.6",
+        "nodemon": "^1.19.1",
+        "supertest": "^4.0.2",
+        "tap-spec": "^5.0.0",
+        "tape": "^4.11.0"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "compression": "^1.7.4",
+        "express": "^4.17.1",
+        "morgan": "^1.9.1",
+        "serve-favicon": "^2.5.0"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GSG-G7/Your-Lyrics.git"
+    },
+    "bugs": {
+        "url": "https://github.com/GSG-G7/Your-Lyrics/issues"
+    },
+    "homepage": "https://github.com/GSG-G7/Your-Lyrics#readme"
 }
