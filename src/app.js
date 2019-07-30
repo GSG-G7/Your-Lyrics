@@ -10,7 +10,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(favicon(path.join(__dirname, '..', 'public', 'favicon.ico')));
 // Handling the static files
 app.use(
-  express.static(path.join(__dirname, '..', 'public'), { maxAge: '30d' })
+  express.static(path.join(__dirname, '..', 'public'), { maxAge: '30d' }),
 );
 // Handling all the routes
 app.use(controllers);
