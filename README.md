@@ -57,7 +57,8 @@ to test our project with its test step by step .
 * Responsive and Accessbility : 
 <br> We chekout the Responsive case especially mobile status for our design and also check accessbility for the app to work in the better case.
 <br> Mobile View: 
-<br>
+<br> > Mobile View: 
+
 ![Screenshot](public/assets/Mobile-View.png)
 
 
