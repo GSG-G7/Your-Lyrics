@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: #232526;
+  color: #fff;
+}
+
+/* Styling The landing Page */
+
+.home {
+  width: 100%;
+  height: 60vh;
+  padding: 3rem 2rem;
+}
+
+.home__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  background: linear-gradient(to right, #dd1637, #f9425f);
+  /* Making The Text Color Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+}
+
+.home__contact {
+  padding: 0.5rem 1rem;
+  border-radius: 11px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.button--purple {
+  background: linear-gradient(to right, #dd1637, #f9425f);
+}
+
+.button--purple:hover {
+  background: linear-gradient(to left, #dd1637, #f9425f);
+}
+
+.home__main {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home__heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.home__article {
+  color: rgb(190, 190, 190);
+  margin: 0 0 1.5rem 0;
+}
+
+.home__main__song {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 0 1rem 0;
+}
+
+.home__main__search {
+  width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 11px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/* Styling The Top Songs Section */
+
+.content {
+  width: 100%;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  margin: 0 0 4rem 0;
+}
+
+.content__songs {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__top__song {
+  width: 90%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  font-size: 2rem;
+  text-transform: capitalize;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Each Card/Song Has A BG Color */
+
+.cards__one {
+  background: linear-gradient(180deg, #ec6ead 0%, #f7e867 110.67%);
+}
+
+.cards__two {
+  background: linear-gradient(360deg, #43e7b6 0%, #1cb5e0 104.92%);
+}
+
+.cards__three {
+  background: linear-gradient(360deg, #8a2387 0%, #e94057 104.49%);
+}
+
+/* Styling The Footer Starts Here */
+
+.footer {
+  width: 100%;
+  background: #313131;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer * {
+  margin: 1rem 0;
+}
+
+.footer__main__logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  background: linear-gradient(to right, #dd1637, #f9425f);
+  /* Making The Text Color Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  -o-background-clip: text;
+  -o-text-fill-color: transparent;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__main__article {
+  color: rgb(190, 190, 190);
+}
+
+.footer__main__heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+/* Styling For The Big Screens (Desktops) */
+@media (min-width: 600px) {
+  html {
+    font-size: 18px;
+  }
+  .home {
+    height: 80vh;
+  }
+  .home__main {
+    height: 65vh;
+  }
+  .home__form {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .home__main__song {
+    width: 76%;
+    margin: 0;
+  }
+  .home__main__search {
+    width: 20%;
+  }
+  .content__songs {
+    flex-direction: row;
+    flex-basis: 25%;
+    justify-content: space-between;
+  }
+  .content__top__song {
+    width: 30%;
+    height: 40vh;
+  }
+  .footer__main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .footer__discription {
+    text-align: left;
+    width: 30%;
+  }
+  .footer__contact * {
+    margin: 0.4rem 0;
+  }
+}
