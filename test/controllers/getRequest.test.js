@@ -4,7 +4,7 @@ const app = require('../../src/app');
 
 test('test for / route', (t) => {
   supertest(app)
-    .get('/api-request')
+    .get('/api')
     .expect('Content-Type', /json/)
     .expect(200)
     .end((err, res) => {
