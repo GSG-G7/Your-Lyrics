@@ -11,8 +11,9 @@ app.disable('x-powered-by');
 
 app.use(compression());
 app.use(express.json());
+// app.use()
 app.use(express.urlencoded({ extended: false }));
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 // Handling The statics and icon
 app.use(favicon(path.join(__dirname, '..', 'public', 'favicon.ico')));
