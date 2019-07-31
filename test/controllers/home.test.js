@@ -2,7 +2,6 @@ const test = require('tape');
 const supertest = require('supertest');
 const app = require('../../src/app');
 
-
 test('test for / route', (t) => {
   supertest(app)
     .get('/')
