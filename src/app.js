@@ -1,7 +1,6 @@
 const path = require('path');
 const express = require('express');
 const compression = require('compression');
-const favicon = require('serve-favicon');
 const controllers = require('./controllers/router');
 // Creating our app
 const app = express();
@@ -15,8 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.set('port', process.env.PORT || 3000);
 
-// Handling The statics and icon
-app.use(favicon(path.join(__dirname, '..', 'public', 'favicon.ico')));
+// Handling The statics
 app.use(
   express.static(path.join(__dirname, '..', 'public'), { maxAge: '30d' }),
 );
