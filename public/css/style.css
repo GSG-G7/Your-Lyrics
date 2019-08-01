@@ -126,6 +126,11 @@ body {
     flex-direction: column;
 }
 
+.content__lyrics {
+    margin-bottom: 6vh;
+    margin-top: -16vh;
+}
+
 .content__top__song {
     width: 90%;
     height: 35vh;
@@ -230,6 +235,7 @@ body {
     .content__top__song {
         width: 30%;
         height: 40vh;
+        margin-bottom: 8vh;
     }
     .footer__main {
         width: 100%;
@@ -244,4 +250,18 @@ body {
     .footer__contact * {
         margin: 0.4rem 0;
     }
+}
+
+.card__one__link,
+.card__two__link,
+.card__three__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card__one__link:hover,
+.card__two__link:hover,
+.card__three__link:hover {
+    text-decoration: none;
+    color: #f9425f;
 }
