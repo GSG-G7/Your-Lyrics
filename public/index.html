@@ -1,60 +1,74 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>YourLyics</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,500,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="home">
-        <header class="home__header">
-            <h1 class="home__logo">YourLyrics</h1>
-            <a href="#contact" class="home__contact button--purple">contact us</a>
-        </header>
-        <section class="home__main">
-            <h1 class="home__heading">We Try To Be The Best</h1>
-            <p class="home__article">
-                To Help You Get The Lyrics Of Your Favorite Song As Fast As You Can.
-            </p>
-            <form action="/song" method="POST" class="home__form">
-                <input class="home__main__song" type="text" name="song" placeholder="type your song name" aria-label="song name" />
-                <input class="home__main__search button--purple" type="submit" value="Search" aria-label="submit" />
-            </form>
-        </section>
+      <header class="home__header">
+        <h1 class="home__logo">YourLyrics</h1>
+        <a href="#contact" class="home__contact button--purple">contact us</a>
+      </header>
+      <section class="home__main">
+        <h1 class="home__heading">We Try To Be The Best</h1>
+        <p class="home__article">
+          To Help You Get The Lyrics Of Your Favorite Song As Fast As You Can.
+        </p>
+        <form action="/song" method="POST" class="home__form">
+          <input
+            class="home__main__song"
+            type="text"
+            name="song"
+            placeholder="type your song name"
+            aria-label="song name"
+          />
+          <input
+            class="home__main__search button--purple"
+            type="submit"
+            value="Search"
+            aria-label="submit"
+          />
+        </form>
+      </section>
     </section>
     <main class="content">
-        <div class="content__lyrics"><pre class="content__text"></pre></div>
-        <section class="content__top">
-            <h1 class="content__heading">The Top Songs</h1>
-            <div class="content__songs cards">
-                <div class="content__top__song cards__one">song name</div>
-                <div class="content__top__song cards__two">song name</div>
-                <div class="content__top__song cards__three">song name</div>
-            </div>
-        </section>
+      <div class="content__lyrics"><pre class="content__text"></pre></div>
+      <section class="content__top">
+        <h1 class="content__heading">The Top Songs</h1>
+        <div class="content__songs cards">
+          <div class="content__top__song cards__one">
+            <a href="">Señorita</a>
+          </div>
+          <div class="content__top__song cards__two">song name</div>
+          <div class="content__top__song cards__three">song name</div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <section class="footer__main">
-            <div class="footer__discription">
-                <h2 class="footer__main__logo">YourLyrics</h2>
-                <p class="footer__main__article">
-                    To Help You Get The Lyrics Of Your Favorite Song As Fast As You Can.
-                </p>
-            </div>
-            <div class="footer__contact">
-                <h2 class="footer__main__heading">contact us</h2>
-                <email class="footer__main__email">yourlyrics@example.com</email>
-                <span class="footer__main__phone">+972 595 730 3055</span>
-            </div>
-        </section>
-        <p class="footer__rights">© 2018 Your Lyrics. All Rights Reserved</p>
+      <section class="footer__main">
+        <div class="footer__discription">
+          <h2 class="footer__main__logo">YourLyrics</h2>
+          <p class="footer__main__article">
+            To Help You Get The Lyrics Of Your Favorite Song As Fast As You Can.
+          </p>
+        </div>
+        <div class="footer__contact">
+          <h2 class="footer__main__heading">contact us</h2>
+          <email class="footer__main__email">yourlyrics@example.com</email>
+          <span class="footer__main__phone">+972 595 730 3055</span>
+        </div>
+      </section>
+      <p class="footer__rights">© 2018 Your Lyrics. All Rights Reserved</p>
     </footer>
     <script src="js/logic.js"></script>
     <script src="js/dom.js"></script>
-</body>
-
+  </body>
 </html>
