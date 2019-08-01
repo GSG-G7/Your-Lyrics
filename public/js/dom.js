@@ -10,9 +10,14 @@ const card_Three_link = document.querySelector('.card__three__link');
 
 search.addEventListener('click', (e) => {
   e.preventDefault();
-  fetchApi((obj) => {
-    lyrics.textContent = obj.message.body.lyrics.lyrics_body;
-  });
+  fetch('/song', {
+    method: 'POST',
+    body: JSON.stringify({ name: song.value }),
+    headers: { 'Content-Type': 'application/json' },
+  })
+    .then(res => res.json())
+    .then(data => (lyrics.textContent = data.message.body.lyrics.lyrics_body))
+    .catch(error => console.log(error));
 });
 fetchSongNames((obj) => {
   card_One_link.textContent = obj.track_list[0].track.track_name;

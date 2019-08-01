@@ -129,6 +129,9 @@ body {
 .content__lyrics {
     margin-bottom: 6vh;
     margin-top: -16vh;
+    background-color: #313131;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
 }
 
 .content__top__song {
@@ -147,15 +150,15 @@ body {
 /* Each Card/Song Has A BG Color */
 
 .cards__one {
-    background: linear-gradient(180deg, #ec6ead 0%, #f7e867 110.67%);
+    background: linear-gradient(360deg, #1cb5e07a 0%, #e9405780 104.49%), url('https://images.unsplash.com/photo-1548383572-b7bacb6893d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80');
 }
 
 .cards__two {
-    background: linear-gradient(360deg, #43e7b6 0%, #1cb5e0 104.92%);
+    background: linear-gradient(360deg, #43e7b679 0%, #1cb5e07e 104.92%), url('https://images.unsplash.com/photo-1457463658343-253a25d7dce3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80');
 }
 
 .cards__three {
-    background: linear-gradient(360deg, #8a2387 0%, #e94057 104.49%);
+    background: linear-gradient(360deg, #8a23876e 0%, #e9405767 104.49%), url('https://images.unsplash.com/photo-1556405903-073dbfbd8132?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=779&q=80');
 }
 
 
