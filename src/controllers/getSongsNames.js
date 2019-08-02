@@ -1,6 +1,8 @@
 const request = require('request');
+require('dotenv').config();
 
-const urlSongs = 'http://api.musixmatch.com/ws/1.1/album.tracks.get?album_id=13750844&page=1&page_size=3&apikey=fd8b260109e72ffe55cdb91847c144f9';
+const apiKey = process.env.API_KEY;
+const urlSongs = `http://api.musixmatch.com/ws/1.1/album.tracks.get?album_id=13750844&page=1&page_size=3&apikey=${apiKey}`;
 
 
 const getSong = url => new Promise((resolve, reject) => {
