@@ -2,15 +2,13 @@ const express = require('express');
 
 const router = express.Router();
 
-const home = require('./home');
-const error = require('./error');
-const song = require('./song');
-const songName = require('./getSongsNames');
+const { get } = require('./home');
+const { client, server } = require('./error');
+const { post } = require('./song');
 
-router.get('/', home.get);
-router.get('/songNames', songName.getSong);
-router.post('/song', song.post);
-router.use(error.client);
-router.use(error.server);
+router.get('/', get);
+router.post('/song', post);
+router.use(client);
+router.use(server);
 
 module.exports = router;
